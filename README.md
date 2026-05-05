@@ -35,7 +35,7 @@ The meta skills give you the tools to **build, validate, and maintain** your own
 ### Linux/macOS
 
 ```bash
-git clone https://github.com/<your-user>/claude-skills-supreme.git
+git clone https://github.com/Bossant77/claude-skills-supreme.git
 cd claude-skills-supreme
 ./install.sh
 ```
@@ -43,7 +43,7 @@ cd claude-skills-supreme
 ### Windows
 
 ```powershell
-git clone https://github.com/<your-user>/claude-skills-supreme.git
+git clone https://github.com/Bossant77/claude-skills-supreme.git
 cd claude-skills-supreme
 .\install.ps1
 ```
