@@ -1,0 +1,44 @@
+{
+  "name": "harness-supreme",
+  "version": "0.1.0-scaffold",
+  "description": "Fused harness scaffold: superpowers + everything-claude-code + get-shit-done. Status: SCAFFOLD ONLY. Skill bodies, hook handlers, and commands are not yet merged. See CONFLICTS.md and HOOKS-DECISIONS.md before activation.",
+  "author": {
+    "name": "josebolio (Bossant77)",
+    "email": "josebolio@peninsulawyers.com"
+  },
+  "license": "MIT",
+  "fused_from": [
+    {
+      "name": "superpowers",
+      "marketplace": "claude-plugins-official",
+      "version": "5.1.0",
+      "license": "MIT",
+      "author": "Jesse Vincent",
+      "source_path": "~/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/"
+    },
+    {
+      "name": "everything-claude-code",
+      "version": "2.0.0-rc.1",
+      "license": "MIT",
+      "author": "Affaan Mustafa",
+      "repo": "https://github.com/affaan-m/everything-claude-code",
+      "source_path": "~/.claude/claude-library/global/skills/everything-claude-code/"
+    },
+    {
+      "name": "get-shit-done",
+      "version": "1.39.0-rc.4",
+      "license": "MIT",
+      "author": "TÂCHES / Lex Christopherson",
+      "repo": "https://github.com/gsd-build/get-shit-done",
+      "source_path": "~/.claude/claude-library/global/skills/get-shit-done/"
+    }
+  ],
+  "fused_at": "2026-05-04",
+  "generated_by": "plugin-fusion (test run, scope-limited)",
+  "status": "scaffold",
+  "scaffold_notes": "Phases 1-5 only. Phase 6 (install scripts) and Phase 7 (activation) deliberately NOT executed. Skill bodies NOT merged - requires interactive skill-fusion per overlap. Hook handlers NOT consolidated - requires user decisions in HOOKS-DECISIONS.md.",
+  "skills": ["./skills/"],
+  "commands": ["./commands/"],
+  "agents": ["./agents/"],
+  "mcpServers": {}
+}

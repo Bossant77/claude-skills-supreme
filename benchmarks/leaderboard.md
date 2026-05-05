@@ -102,9 +102,11 @@ Meta skills don't have natural baselines, tested by single-scenario demonstratio
 | **setup-project** | Sample folder Next+Tailwind+Stripe+Playwright+vercel.json | 9/10 | Detection perfect (frontend/deploy-vercel/deploy-stripe/browser-testing), CLAUDE.md template generated. Gap: didn't reconcile installed_plugins.json |
 | **skill-fusion** | Generate brainstorming-supreme from sp:brainstorming + frontend-design | 9/10 | Quality fusion, sources preserved + deduplicated, philosophical tension resolved (consume-not-chain) |
 
+Tested 2026-05-05:
+- **skill-review** (meta-meta) — 9/10. Validated workflow on brainstorming-supreme. Auto-detected sources from frontmatter, generated valid 40-pt rubric, dispatch plan correct
+- **plugin-fusion** — 8.5/10. Generated harness-supreme scaffold from 3 sources (superpowers + everything-cc + get-shit-done). Inventory found 196 skills + 133 commands + 81 agents + 8 hook events. 9 conflicts flagged + 12 deferred decisions documented. See `examples/harness-supreme-scaffold/`
+
 Untested:
-- **skill-review** — meta-meta (testing the tester); skipped
-- **plugin-fusion** — heavy, real-plugin requirements; deferred
 - **skill-creation-supreme** — overlap with skill-fusion test; deferred
 
 ## Variance observations
