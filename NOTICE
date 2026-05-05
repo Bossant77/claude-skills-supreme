@@ -1,0 +1,126 @@
+claude-skills-supreme
+Copyright (c) 2026 Bossant77
+
+This product includes derivative works that synthesize methodology, structure,
+and discipline from the following upstream open-source projects. Each fusion
+skill's `SKILL.md` file lists specific contributions per source in its
+`sources:` frontmatter.
+
+================================================================================
+APACHE-2.0 LICENSED UPSTREAM SOURCES
+================================================================================
+
+obra/superpowers
+  Repository: https://github.com/obra/superpowers
+  Copyright (c) obra
+  License: Apache License 2.0 (see LICENSES/APACHE-2.0.txt)
+  Contribution to this repo:
+    - Methodology backbone for code review (requesting/receiving)
+    - Plan writing and executing discipline
+    - Subagent-driven development pattern
+    - Systematic debugging methodology
+    - Skill writing guidelines (used by skill-creation-supreme)
+    - Verification-before-completion discipline
+
+  Notice: portions of this repository's fusion skills derive their
+  workflow structure, anti-patterns, and discipline from superpowers.
+  Required Apache-2.0 attributions preserved in this NOTICE.
+
+================================================================================
+MIT LICENSED UPSTREAM SOURCES
+================================================================================
+
+thedotmack/claude-mem
+  Repository: https://github.com/thedotmack/claude-mem
+  Copyright (c) thedotmack
+  License: MIT (see LICENSES/MIT-upstream.txt)
+  Contribution to this repo:
+    - Memory-aware research pattern (planning-supreme Phase 0)
+    - Phased implementation plan structure (make-plan)
+    - Subagent-driven phased execution (do)
+    - Cross-session memory search semantics
+
+JuliusBrussee/caveman
+  Repository: https://github.com/JuliusBrussee/caveman
+  Copyright (c) JuliusBrussee
+  License: MIT (see LICENSES/MIT-upstream.txt)
+  Contribution to this repo:
+    - Terse output format (one-line per finding) used in code-review-supreme
+    - Token-efficient communication discipline (referenced throughout)
+
+forrestchang/andrej-karpathy-skills
+  Repository: https://github.com/forrestchang/andrej-karpathy-skills
+  Copyright (c) forrestchang
+  License: MIT (see LICENSES/MIT-upstream.txt)
+  Contribution to this repo:
+    - karpathy-guidelines content (simplicity-first, surgical changes,
+      surface assumptions) — packaged by forrestchang from Andrej
+      Karpathy's public observations on LLM coding pitfalls
+    - Used by simplify-supreme (principles) and debugging-supreme
+      (surgical-change discipline)
+
+================================================================================
+ANTHROPIC CLAUDE CODE BUILT-INS / OFFICIAL PLUGINS
+================================================================================
+
+The following official Anthropic Claude Code skills/commands are referenced
+or built upon as part of fusion methodology. They are NOT redistributed in
+this repository — only their behavior is described and integrated in the
+fusion skill bodies for orchestration purposes:
+
+  - /init (built-in)
+  - /review (built-in)
+  - /security-review (built-in)
+  - simplify (built-in)
+  - update-config (built-in)
+  - claude-api (built-in)
+  - code-review (claude-plugins-official)
+  - code-simplifier (claude-plugins-official)
+  - chrome-devtools-mcp (claude-plugins-official) — troubleshooting,
+    memory-leak-debugging, debug-optimize-lcp skills
+  - skill-creator (claude-plugins-official)
+
+For the canonical implementation of these built-ins/plugins, refer to:
+  https://github.com/anthropics/claude-code
+  https://github.com/anthropics/skills
+
+================================================================================
+ORIGINAL WORK IN THIS REPOSITORY
+================================================================================
+
+The following are original contributions by Bossant77 under MIT license:
+
+  - Meta skills:
+    - skills/coach/
+    - skills/skill-fusion/
+    - skills/plugin-fusion/
+    - skills/skill-review/
+    - skills/skill-creation-supreme/
+  - Multi-agent benchmark methodology (skill-review skill body)
+  - Test artifacts and ground-truth files in benchmarks/
+  - Aggregate scoring and leaderboard
+  - Documentation: README.md, BENCHMARKS.md, CONTRIBUTING.md
+  - Install scripts: install.sh, install.ps1
+
+================================================================================
+HOW DERIVATIVE LICENSING APPLIES
+================================================================================
+
+Each fusion skill (code-review-supreme, planning-supreme, debugging-supreme,
+simplify-supreme) is a NEW WORK whose authorship is the synthesis itself,
+but whose component methodology derives from sources listed above.
+
+When in doubt, treat the strictest applicable upstream license as governing
+the derivative portions. In practice this means:
+
+  - For derivatives of superpowers content: Apache-2.0 attribution required
+    (preserved here in NOTICE and LICENSE)
+  - For derivatives of MIT-licensed content: MIT attribution required
+    (preserved here in NOTICE)
+  - For descriptions of Anthropic built-ins: no redistribution; reference only
+
+Users redistributing this repository (forks, marketplaces, etc.) MUST:
+  1. Preserve this NOTICE file
+  2. Preserve LICENSES/ folder
+  3. Preserve sources: frontmatter in each fusion's SKILL.md
+  4. Preserve the LICENSE file's attribution sections

@@ -22,17 +22,66 @@ SOFTWARE.
 
 ---
 
-## Source attribution
+# Scope of this MIT license
 
-Fusion skills in this repository combine ideas, methodology, and structure from:
+The MIT license above applies to:
 
-- obra/superpowers (Apache 2.0)
-- thedotmack/claude-mem (MIT)
-- JuliusBrussee/caveman (MIT)
-- forrestchang/andrej-karpathy-skills (MIT)
-- Claude Code built-in commands (Anthropic)
+- Original meta-skills authored for this repository:
+  - `skills/coach/`
+  - `skills/skill-fusion/`
+  - `skills/plugin-fusion/`
+  - `skills/skill-review/`
+  - `skills/skill-creation-supreme/`
+- Benchmark methodology, test artifacts, and scoring code in `benchmarks/`
+- Documentation: `README.md`, `BENCHMARKS.md`, `CONTRIBUTING.md`
+- Install scripts: `install.sh`, `install.ps1`
 
-Each fusion's `SKILL.md` frontmatter contains a `sources:` section attributing
-specific contributions. Original methodology and discipline credit goes to
-those upstream authors. The fusion synthesis, benchmark methodology, and
-empirical validation in this repo are the contribution of this project.
+# Fusion skills — derivative works
+
+The following fusion skills synthesize methodology and structure from
+multiple upstream open-source projects. Each fusion's `SKILL.md` frontmatter
+contains a `sources:` section attributing specific contributions. See:
+
+- `LICENSES/APACHE-2.0.txt` — text of Apache License 2.0
+- `LICENSES/MIT-upstream.txt` — text of MIT License (used by upstream projects)
+- `NOTICE` — per-source attribution and notice requirements
+
+Fusion skill files (each delivered under the licenses listed below per the
+upstream the methodology derives from):
+
+- `skills/code-review-supreme/SKILL.md` — derives from:
+  - `code-review` plugin (Anthropic Claude Code official plugins)
+  - `superpowers` skills (Apache-2.0, © obra)
+  - `caveman:caveman-review` (MIT, © JuliusBrussee)
+  - `/security-review`, `/review` built-in (Anthropic Claude Code)
+- `skills/planning-supreme/SKILL.md` — derives from:
+  - `superpowers:writing-plans`, `superpowers:executing-plans`,
+    `superpowers:subagent-driven-development` (Apache-2.0, © obra)
+  - `claude-mem:make-plan`, `claude-mem:do` (MIT, © thedotmack)
+- `skills/debugging-supreme/SKILL.md` — derives from:
+  - `superpowers:systematic-debugging` (Apache-2.0, © obra)
+  - `chrome-devtools-mcp` skills (Anthropic Claude Code)
+  - `karpathy-guidelines` content (MIT, © forrestchang, derived from Andrej Karpathy)
+- `skills/simplify-supreme/SKILL.md` — derives from:
+  - `karpathy-guidelines` (MIT, © forrestchang)
+  - `simplify` built-in (Anthropic Claude Code)
+  - `code-simplifier` plugin (Anthropic Claude Code official plugins)
+
+Where upstream uses Apache-2.0 (notably `superpowers`), the Apache-2.0 license
+applies to the synthesized portions deriving from that source.
+
+When in doubt, treat the strictest applicable upstream license as governing
+the derivative portions.
+
+# Original Karpathy Guidelines content
+
+`skills/karpathy-guidelines/` content is derived from Andrej Karpathy's
+public observations on LLM coding pitfalls. Original guidelines are in
+the public domain / fair-use commentary; the skill packaging by
+forrestchang is MIT.
+
+# Anthropic Claude Code built-ins
+
+References to `/init`, `/review`, `/security-review`, `simplify`,
+and other built-in skills/commands describe behavior of Anthropic's
+Claude Code product. They are not redistributed by this repository.
